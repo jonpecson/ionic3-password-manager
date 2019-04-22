@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+      <ion-title>Reset Master Passcode</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="reset">
+  <ion-list>
+      <ion-item>
+          <ion-label floating>Master Passcode</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Confirm Master Passcode</ion-label>
+          <ion-input type="password" [(ngModel)]="confirmation"></ion-input>
+      </ion-item>
+  </ion-list>
+  <button ion-button color="danger" (click)="reset()">Reset / Wipe</button>
+</ion-content>

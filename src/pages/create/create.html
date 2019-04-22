@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+      <ion-title>Create Password</ion-title>
+      <ion-buttons end>
+          <button ion-button (click)="save()">Save</button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="create">
+  <ion-list>
+      <ion-item>
+          <ion-label floating>Title</ion-label>
+          <ion-input type="text" [(ngModel)]="title"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text" [(ngModel)]="username"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+  </ion-list>
+</ion-content>

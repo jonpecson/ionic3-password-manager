@@ -1,0 +1,22 @@
+// Install bcrypt - for hashing master password
+npm install bcryptjs --save
+npm install @types/bcryptjs --save
+
+// Install forge - for encrypting sensitive data
+npm i node-forge
+npm install --save @types/node-forge
+
+// Install SQLite - for storing encrypted data
+// When running in a native app context, Storage will prioritize using SQLite
+ionic cordova plugin add cordova-sqlite-storage
+npm install --save @ionic-native/sqlite@4
+
+// When running in the web, Storage will attempt to use IndexedDB, WebSQL, and localstorage, in that order.
+npm install --save @ionic/storage
+
+
+// SQLite Wrapper for saving data
+ionic g provider database
+
+// Helper Class for Encryption 
+ionic g provider forge
